@@ -8,10 +8,10 @@ public:
         }
         sort(ans.begin() , ans.end());
         for(int i = 0; i < ans.size() ; i++){
-            if(ans[i] != heights[i]){
+            if(ans[i] == heights[i]){
                 count++;
             }
         }
-        return count;
+        return ans.size() - count;
     }
 };
